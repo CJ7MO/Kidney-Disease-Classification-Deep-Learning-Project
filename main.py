@@ -3,7 +3,11 @@ from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTraining
 from cnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from cnnClassifier.pipeline.stage_03_model_training import ModelTrainingPipeline
 from cnnClassifier.pipeline.stage_04_model_evaluation import EvaluationPipeline
+import os
 
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/CJ7MO/Kidney-Disease-Classification-using-MLflow-DVC.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="CJ7MO"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="0269ca637d03cf03e28c6dc2d7760fd4ec659d15"
 
 
 
